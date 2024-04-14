@@ -23,6 +23,19 @@ This web application allows users to retrieve and analyze motor vehicle collisio
    ```bash
    pip install -r requirements.txt
 
+The dependencies used in the Flask application are:
+
+1. Flask: A web framework for building web applications in Python.
+2. pymysql: A Python MySQL client library for interacting with MySQL databases.
+3. csv: A module for reading and writing CSV files.
+4. StringIO: A utility class for handling in-memory string buffering, used for creating CSV data in memory.
+
+   ```bash
+   pip install Flask
+   pip install pymysql
+   pip install Werkzeug>=2.0
+   pip install --upgrade Flask Werkzeug
+
 ### Database Setup
 Create a MySQL database named nyccrashes.
 Import the provided dataset into the crash table or create a similar table with the specified schema.
