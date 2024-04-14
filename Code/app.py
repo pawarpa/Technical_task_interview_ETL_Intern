@@ -9,7 +9,7 @@ app = Flask(__name__)
 mysql_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Savita@14121973', #Enter your password here
+    'password': 'Password', #Enter your password here
     'database': 'nyccrashes',
     'cursorclass': pymysql.cursors.DictCursor
 }
