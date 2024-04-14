@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Crashes</title>
+
+    <!-- Styling for the HTML elements -->
+    <style>
+        /* Styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        /* Styling for the container */
+        .container {
+            max-width: 2000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+         /* Styling for the heading */
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #121968;
+        }
+         /* Styling for the form */
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Styling for labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        /* Styling for select and input[type="number"] elements */
+        select, input[type="number"] {
+            width: calc(33.33% - 10px);
+            margin: 0 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+         /* Styling for select and input[type="text"] elements */
+        select, input[type="text"] {
+            width: calc(33.33% - 10px);
+            margin: 0 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* Styling for buttons */
+        button {
+            padding: 10px 20px;
+            background-color: #121968;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        /* Hover effect for buttons */
+        button:hover {
+            background-color: #197d28;
+        }
+        /* Styling for tables */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 12px;
+            font-size: 10px;
+        }
+        /* Styling for table headers and cells */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px; /* Adjust padding for better spacing */
+            text-align: left;
+        }
+        /* Styling for table headers */
+        th {
+            background-color: #f2f2f2;
+            width: 20%; /* Adjust column width as needed */
+        }
+
+        /* Responsive table layout */
+        @media screen and (max-width: 768px) {
+            th, td {
+                width: 100%; /* Full width for smaller screens */
+            }
+        }
+    </style>
+
+    <!-- JavaScript functions -->
+    <script>
+         // Function to fetch data based on user input
+        function fetchData() {
+            var borough = document.getElementById("borough").value;
+            var collisionId = document.getElementById("collisionId").value;
+            var page = document.getElementById("page").value;
+            var limit = document.getElementById("limit").value;
+            var crashDate = document.getElementById("crashDate").value; // Get selected date
+            
+            // Construct URL for API call
+            var url = `/api/records?borough=${borough}&collisionId=${collisionId}&page=${page}&limit=${limit}&crashDate=${crashDate}`;
+            
+            // Fetch data from API
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    // Display fetched data
+                    displayUserData(data);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+ 
+         // Function to display user data in a table
+        function displayUserData(data) {
+            var userDetailsDiv = document.getElementById("userDetails");
+            userDetailsDiv.innerHTML = '';
+            if (data.length > 0) {
+                var table = document.createElement('table');
+                var thead = table.createTHead();
+                var tbody = table.createTBody();
+                var headerRow = thead.insertRow();
+                var headers = Object.keys(data[0]);
+                headers.forEach(header => {
+                    var th = document.createElement('th');
+                    th.textContent = header;
+                    headerRow.appendChild(th);
+                });
+                data.forEach(item => {
+                    var row = tbody.insertRow();
+                    headers.forEach(header => {
+                        var cell = row.insertCell();
+                        cell.textContent = item[header];
+                    });
+                });
+                userDetailsDiv.appendChild(table);
+            } else {
+                userDetailsDiv.textContent = 'Record not found.';
+            }
+        }
+
+        // Function to download CSV data
+        function downloadCSV() {
+            // Get values from input fields
+            var borough = document.getElementById("borough").value;
+            var crashDate = document.getElementById("crashDate").value;
+            var collisionId = document.getElementById("collisionId").value;
+            var page = document.getElementById("page").value;
+            var limit = document.getElementById("limit").value;
+            
+            // Construct URL for CSV download
+            var url = `/api/records?borough=${borough}&crashDate=${crashDate}&collisionId=${collisionId}&page=${page}&limit=${limit}&download=true`;
+            
+            // Fetch CSV data from API
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    // Create a blob URL and download the file
+                    const url = window.URL.createObjectURL(new Blob([blob]));
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    // Set the file name
+                    a.download = 'crash_data.csv';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NYC Open Data - Motor Vehicle Collisions - Crashes</h1>
+        <!-- Form for user input -->
+        <form>
+            <!-- Dropdown for selecting borough -->
+            <label for="borough">Select Borough:</label>
+            <select id="borough" name="borough">
+                <option value="">All Boroughs</option>
+                <!-- Loop through boroughs to populate dropdown options -->
+                {% for borough in boroughs %}
+                    <option value="{{ borough }}">{{ borough }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <!-- Input field for entering date -->
+            <label for="crashDate">Enter Date:</label>
+            <input type="text" id="crashDate" name="crashDate" placeholder="MM/DD/YYYY">
+            <br><br> 
+            <!-- Input field for entering collision ID -->
+            <label for="collisionId">Enter Collision ID:</label>
+            <input type="number" id="collisionId" name="collisionId">
+            <br><br>
+            <!-- Input field for entering page number -->
+            <label for="page">Page:</label>
+            <input type="number" id="page" name="page" min="1" value="1">
+            <br><br> 
+            <!-- Input field for entering result limit -->
+            <label for="limit">Limit:</label>
+            <input type="number" id="limit" name="limit" min="1" value="10">
+            <br><br> 
+            <!-- Button to fetch and display data -->
+            <button type="button" onclick="fetchData()">View Data</button>
+            <!-- Button to download data as CSV -->
+            <button type="button" onclick="downloadCSV()">Download Data</button>
+        </form>
+         <!-- Container to display user details -->       
+        <div id="userDetails"></div>
+    </div>
+</body>
+</html>

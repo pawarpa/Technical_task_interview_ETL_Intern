@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Crashes_20240412.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CRASH DATE" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CRASH TIME" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="BOROUGH" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="ZIP CODE" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="LATITUDE" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="LONGITUDE" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="LOCATION" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="ON STREET NAME" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CROSS STREET NAME" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="OFF STREET NAME" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF PERSONS INJURED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF PERSONS KILLED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF PEDESTRIANS INJURED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF PEDESTRIANS KILLED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF CYCLIST INJURED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF CYCLIST KILLED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF MOTORIST INJURED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF MOTORIST KILLED" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 1" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 2" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 3" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 4" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 5" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="COLLISION_ID" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 1" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 2" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 3" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 4" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 5" size="254" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="174" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="CRASH DATE" selected="True" />
+            <Field field="CRASH TIME" selected="True" />
+            <Field field="BOROUGH" selected="True" />
+            <Field field="ZIP CODE" selected="True" />
+            <Field field="LATITUDE" selected="True" />
+            <Field field="LONGITUDE" selected="True" />
+            <Field field="LOCATION" selected="True" />
+            <Field field="ON STREET NAME" selected="True" />
+            <Field field="CROSS STREET NAME" selected="True" />
+            <Field field="OFF STREET NAME" selected="True" />
+            <Field field="NUMBER OF PERSONS INJURED" selected="True" />
+            <Field field="NUMBER OF PERSONS KILLED" selected="True" />
+            <Field field="NUMBER OF PEDESTRIANS INJURED" selected="True" />
+            <Field field="NUMBER OF PEDESTRIANS KILLED" selected="True" />
+            <Field field="NUMBER OF CYCLIST INJURED" selected="True" />
+            <Field field="NUMBER OF CYCLIST KILLED" selected="True" />
+            <Field field="NUMBER OF MOTORIST INJURED" selected="True" />
+            <Field field="NUMBER OF MOTORIST KILLED" selected="True" />
+            <Field field="CONTRIBUTING FACTOR VEHICLE 1" selected="True" />
+            <Field field="CONTRIBUTING FACTOR VEHICLE 2" selected="True" />
+            <Field field="CONTRIBUTING FACTOR VEHICLE 3" selected="True" />
+            <Field field="CONTRIBUTING FACTOR VEHICLE 4" selected="True" />
+            <Field field="CONTRIBUTING FACTOR VEHICLE 5" selected="True" />
+            <Field field="COLLISION_ID" selected="True" />
+            <Field field="VEHICLE TYPE CODE 1" selected="True" />
+            <Field field="VEHICLE TYPE CODE 2" selected="True" />
+            <Field field="VEHICLE TYPE CODE 3" selected="True" />
+            <Field field="VEHICLE TYPE CODE 4" selected="True" />
+            <Field field="VEHICLE TYPE CODE 5" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CRASH DATE" size="10" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="String" />
+            <Field name="CRASH TIME" size="5" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="String" />
+            <Field name="BOROUGH" size="13" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="ZIP CODE" size="5" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="String" />
+            <Field name="LATITUDE" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Double" />
+            <Field name="LONGITUDE" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Double" />
+            <Field name="LOCATION" size="25" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="String" />
+            <Field name="ON STREET NAME" size="32" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CROSS STREET NAME" size="32" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="OFF STREET NAME" size="40" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="NUMBER OF PERSONS INJURED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF PERSONS KILLED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF PEDESTRIANS INJURED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF PEDESTRIANS KILLED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF CYCLIST INJURED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF CYCLIST KILLED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF MOTORIST INJURED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="NUMBER OF MOTORIST KILLED" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Byte" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 1" size="53" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 2" size="53" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 3" size="53" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 4" size="43" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="CONTRIBUTING FACTOR VEHICLE 5" size="43" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="COLLISION_ID" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="Int32" />
+            <Field name="VEHICLE TYPE CODE 1" size="38" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 2" size="38" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 3" size="35" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 4" size="35" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+            <Field name="VEHICLE TYPE CODE 5" size="35" source="File: C:\Users\pawar\OneDrive - Northeastern University\Sikka\Motor_Vehicle_Collisions_-_Crashes_20240412.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CRASH DATE" selected="True" />
+            <SelectField field="CRASH TIME" selected="True" />
+            <SelectField field="BOROUGH" selected="True" />
+            <SelectField field="ZIP CODE" selected="True" />
+            <SelectField field="LATITUDE" selected="True" />
+            <SelectField field="LONGITUDE" selected="True" />
+            <SelectField field="LOCATION" selected="True" />
+            <SelectField field="ON STREET NAME" selected="True" />
+            <SelectField field="CROSS STREET NAME" selected="True" />
+            <SelectField field="OFF STREET NAME" selected="True" />
+            <SelectField field="NUMBER OF PERSONS INJURED" selected="True" />
+            <SelectField field="NUMBER OF PERSONS KILLED" selected="True" />
+            <SelectField field="NUMBER OF PEDESTRIANS INJURED" selected="True" />
+            <SelectField field="NUMBER OF PEDESTRIANS KILLED" selected="True" />
+            <SelectField field="NUMBER OF CYCLIST INJURED" selected="True" />
+            <SelectField field="NUMBER OF CYCLIST KILLED" selected="True" />
+            <SelectField field="NUMBER OF MOTORIST INJURED" selected="True" />
+            <SelectField field="NUMBER OF MOTORIST KILLED" selected="True" />
+            <SelectField field="CONTRIBUTING FACTOR VEHICLE 1" selected="True" />
+            <SelectField field="CONTRIBUTING FACTOR VEHICLE 2" selected="True" />
+            <SelectField field="CONTRIBUTING FACTOR VEHICLE 3" selected="True" />
+            <SelectField field="CONTRIBUTING FACTOR VEHICLE 4" selected="True" />
+            <SelectField field="CONTRIBUTING FACTOR VEHICLE 5" selected="True" />
+            <SelectField field="COLLISION_ID" selected="True" />
+            <SelectField field="VEHICLE TYPE CODE 1" selected="True" />
+            <SelectField field="VEHICLE TYPE CODE 2" selected="True" />
+            <SelectField field="VEHICLE TYPE CODE 3" selected="True" />
+            <SelectField field="VEHICLE TYPE CODE 4" selected="True" />
+            <SelectField field="VEHICLE TYPE CODE 5" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TableStyle>Quoted</TableStyle>
+            <TransactionMessages>False</TransactionMessages>
+            <Table>crash</Table>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <OutputOption>Create</OutputOption>
+            <Connection DcmType="ConnectionId">ba3e1873-ffc8-412b-b92b-c1d68540c06c</Connection>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:mysql-crashes — Payal
+Table=crash</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>stagin</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="db08092c-fc3d-4d96-babe-e47f231870f5" />
+      <Telemetry>
+        <PreviousWorkflowId value="bf65e779-d0ad-48e7-a226-8cb4a9610304" />
+        <OriginWorkflowId value="bf65e779-d0ad-48e7-a226-8cb4a9610304" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
