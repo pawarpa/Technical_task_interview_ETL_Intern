@@ -32,8 +32,7 @@ The dependencies used in the Flask application are:
 
    ```bash
    pip install Flask
-   pip install pymysql
-   pip install Werkzeug>=2.0
+   pip install flask-mysqldb
    pip install --upgrade Flask Werkzeug
 
 ### Database Setup
