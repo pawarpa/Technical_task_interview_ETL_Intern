@@ -6,7 +6,7 @@ This web application allows users to retrieve and analyze motor vehicle collisio
 
 ### Prerequisites
 
-- Python 3.x installed on your system.
+- Python 3.8.10
 - MySQL database server installed and running.
 
 ### Installation Steps
