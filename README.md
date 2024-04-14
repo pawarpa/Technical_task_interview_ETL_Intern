@@ -60,4 +60,12 @@ Modify the mysql_config dictionary to match your MySQL database configuration (h
 3. Click "View Data" to retrieve and display crash records.
 4. Click "Download Data" to download crash records in CSV format.
 
+### Web Application 
+<br>
+<p align="center">
+	<img src="Web Application.png" width='100%'><br><br>
+</p>
+
+
+
    
